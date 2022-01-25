@@ -3,14 +3,6 @@ import collections
 
 SearchResult = collections.namedtuple('SearchResult', 'file, line, text')
 
-
-def main():
-    print_header()
-    folder = get_folder_from_user()
-    if not folder:
-        print("Sorry, we can't search that location.")
-        return
-
     text = get_search_text_from_user()
     if not text:
         print("We can't search for nothing!")
@@ -81,6 +73,13 @@ def search_file(filename, search_text):
                 yield m
 
         # return matches
+        
+def main():
+    print_header()
+    folder = get_folder_from_user()
+    if not folder:
+        print("Sorry, we can't search that location.")
+        return
 
 if __name__ == '__main__':
     main()
