@@ -1,4 +1,4 @@
-## 086 - Simple Twitter Archive Digest
+## Simple Twitter Archive Digest
 
 1. [Download your Twitter Archive](https://support.twitter.com/articles/20170160)
 
