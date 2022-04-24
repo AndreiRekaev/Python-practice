@@ -45,13 +45,13 @@ def main():
     get_final_score(player1, player2, BEST_OF_NUM)
 
 def print_header():
-    print("=" * 15)
+    print("=" * 25)
     print("15-WAY ROCK PAPER SCISSORS")
-    print("=" * 15)
+    print("=" * 25)
 
 def game_loop(player1, player2, BEST_OF_NUM):
     while max([player1.wins, player2.wins]) < BEST_OF_NUM - 1:
-        
+
         try:
             p1_turn = get_user_selection()
         except (ValueError, IndexError):
@@ -81,6 +81,7 @@ def get_user_selection():
     choices = [f"[{action.value}] {action.action}" for action in actions]
     choices_str = "\n".join(choices)
     selection = int(input(f"\nChoose your move:\n\n{choices_str}\n"))
+
     action = actions[selection - 1]
     return action
 
@@ -119,4 +120,5 @@ if __name__ == "__main__":
         if play_again.lower() != "y":
             break
         else:
+            os.system("clear")
             main()
