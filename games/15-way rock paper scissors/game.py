@@ -45,9 +45,9 @@ def main():
     get_final_score(player1, player2, BEST_OF_NUM)
 
 def print_header():
-    print("=" * 25)
+    print("=" * 27)
     print("15-WAY ROCK PAPER SCISSORS")
-    print("=" * 25)
+    print("=" * 27)
 
 def game_loop(player1, player2, BEST_OF_NUM):
     while max([player1.wins, player2.wins]) < BEST_OF_NUM - 1:
