@@ -51,10 +51,10 @@ def print_header():
 
 def game_loop(player1, player2, BEST_OF_NUM):
     while max([player1.wins, player2.wins]) < BEST_OF_NUM - 1:
-        # TODO: refactor to work version try-except
+        
         try:
             p1_turn = get_user_selection()
-        except ValueError:
+        except (ValueError, IndexError):
             range_str = f"[1, {len(actions)}]"
             print(f"Invalid selection. Enter a value in range {range_str}")
             continue
