@@ -36,3 +36,8 @@ def filter_bites(
     Return the bites dict with bites_done filtered out.
     """
     return {num: bite for num, bite in bites.items() if num not in bites_done}
+
+# another way
+    for d in exclude_bites:
+        bites.pop(d)
+    return bites
