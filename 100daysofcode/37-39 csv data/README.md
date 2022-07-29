@@ -2,7 +2,7 @@
 
 # Data set: Thanksgiving 2015
 
-# Implementation: Write a program that
+Implementation: Write a program that
 
 1. loads the corresponding CSV file.
 2. Asks the user for their US Region (give them a choice between available regions in the data set)
