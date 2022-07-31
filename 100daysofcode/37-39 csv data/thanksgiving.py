@@ -37,7 +37,7 @@ def init():
                         if i >= 11 and i < 24:
                             dishes.add(row[i])
                         if i >= 26 and i < 36:
-                            dishes.add(row[i])
+                            dishes.add(row[i] + ' pie')
                         if i >= 39 and i < 48:
                             dishes.add(row[i])
         dishes.discard('')
