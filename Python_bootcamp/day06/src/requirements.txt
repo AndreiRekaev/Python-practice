@@ -1,0 +1,7 @@
+grpcio
+alembic
+pydantic
+sqlalchemy
+psycopg2
+grpcio-tools
+googleapis-common-protos
