@@ -1,0 +1,107 @@
+html {
+    min-height: 100vh;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #00BCD4;
+}
+
+#game {
+    display: flex;
+    gap: 20px;
+}
+
+#games-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+button {
+    background-color: #8beff1;
+    color: black;
+    border-color: black;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+    width: 100px;
+}
+
+button:hover {
+    background-color: #0088cc;
+}
+
+#game-board {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--game-board-gap);
+    background: var(--game-board-background);
+    padding: var(--game-board-gap);
+    width: calc((var(--tile-size) + var(--game-board-gap)) * var(--game-board-width) - var(--game-board-gap));
+}
+
+#next-board {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--next-board-gap);
+    background: var(--next-board-background);
+    padding: var(--next-board-gap);
+    width: calc((var(--tile-size) + var(--next-board-gap)) * var(--next-board-width) - var(--next-board-gap));
+    height: min-content;
+    margin-bottom: 40px;
+}
+
+.tile {
+    width: var(--tile-size);
+    height: var(--tile-size);
+    background: var(--tile-color);
+}
+
+.active {
+    background: var(--tile-active-color);
+}
+
+.dashboard-text {
+    font-size: 2rem;
+}
+
+#side-panel {
+    margin: 20px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    background-color: #8beff1;
+}
+
+tr {
+    font-size: 14px;
+}
+
+th {
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: left;
+}
